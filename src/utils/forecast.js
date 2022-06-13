@@ -10,7 +10,7 @@ if(error){
 }else if(body.error){
     callback('Unable to find the location!',undefined)
 }else{
-    callback(undefined,'It is currently '+body.current.temperature +' degrees. It feels like ' + body.current.feelslike + ' degrees.')
+    callback(undefined,'It is currently '+body.current.temperature +' degrees. Humidity is '+ body.current.humidity + '% .  Weather description: ' + body.current.weather_descriptions)
 }
 })
 }
